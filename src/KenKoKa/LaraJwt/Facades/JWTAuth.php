@@ -1,6 +1,6 @@
 <?php
 
-namespace KenKoKa\LaraJWT\Facades;
+namespace KenKoKa\LaraJwt\Facades;
 
 use Illuminate\Support\Facades\Facade;
 use KenKoKa\LaraJwt\Services\IJwtAuth;
