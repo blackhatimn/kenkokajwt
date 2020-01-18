@@ -1,0 +1,53 @@
+{
+    "name": "kenkoka/larajwt",
+    "description": "JWT authentication and guard for Laravel API projects",
+    "keywords": [
+      "JWT",
+      "Laravel",
+      "Guard",
+      "Authentication",
+      "API",
+      "REST"
+    ],
+    "homepage": "https://github.com/blackhatimn/kenkokajwt.git",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "ケンコカ",
+        "email": "blackhat.imn@gmail.com",
+        "homepage": "http://namusano.com",
+        "role": "Developer"
+      }
+    ],
+    "support": {
+      "email": "blackhat.imn@gmail.com",
+      "source": "https://github.com/blackhatimn/kenkokajwt/issues"
+    },
+    "require": {
+      "php": ">=7.0",
+      "lcobucci/jwt": "^3.2",
+      "laravel/framework": "^6.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "KenKoKa\\LaraJwt\\": "src/KenKoKa/LaraJwt/",
+        "KenKoKa\\LaraJwtTests\\": "tests/",
+        "KenKoKa\\LaraJwtTests\\Classes\\": "tests/Classes/"
+      }
+    },
+    "require-dev": {
+      "mockery/mockery": "~1.0",
+      "orchestra/testbench": "^3.5"
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "KenKoKa\\LaraJwt\\Providers\\ServiceProvider"
+        ],
+        "aliases": {
+          "JwtAuth": "KenKoKa\\LaraJwt\\Facades\\JwtAuth"
+        }
+      }
+    }
+  }
